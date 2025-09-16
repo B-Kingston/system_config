@@ -1,0 +1,5 @@
+modmap:
+  - name: Swap Escape and CapsLock
+    remap:
+      Esc: CapsLock
+      CapsLock: Esc
