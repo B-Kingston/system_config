@@ -1,0 +1,14 @@
+[Unit]
+Description=xremap
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=sudo /home/bailee/Applications/xremap /home/bailee/dotfiles/.config/xremap/config.yml
+Restart=always
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
